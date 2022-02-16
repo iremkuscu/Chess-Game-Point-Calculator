@@ -21,7 +21,7 @@ public abstract class ChessPiece{
 	public static void setChecker(boolean t, int row, int column){
 		checker[row][column] = t;
 	}
-	
+
 	public static boolean getChecker(int row, int column){
 		return checker[row][column];
 	}
@@ -29,5 +29,5 @@ public abstract class ChessPiece{
 	public abstract double getPoint(ChessPiece chessPiece);
 
 	public abstract void attack(boardSpot boardSpot) throws FileNotFoundException; // for each chessPiece type returns the places all possible places
-	
+
 }
